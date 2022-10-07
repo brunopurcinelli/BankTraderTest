@@ -40,7 +40,7 @@ namespace BankTrader.WebApi.Controllers
                 switch (item.ClientSector.ToLower())
                 {
                     case "private":
-                        if (item.Value <= 1000000)
+                        if (item.Value > 1000000)
                         {
                             tradeCategories.Add("HIGHRISK");
                         }

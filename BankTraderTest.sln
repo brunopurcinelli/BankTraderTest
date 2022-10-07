@@ -11,7 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{49
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{5043FD7E-4900-43E0-BAA1-5B505C4CE2A9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Docker Itens", "5-Docker Itens", "{E415C783-6257-46CD-A52F-BCB0C5B1C0C2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-SQL", "5-SQL", "{E415C783-6257-46CD-A52F-BCB0C5B1C0C2}"
+	ProjectSection(SolutionItems) = preProject
+		BankTrader_IdentityCategories.sql = BankTrader_IdentityCategories.sql
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{8490D6EF-8349-41D5-8AA6-24E0D82CEBD0}"
 EndProject
