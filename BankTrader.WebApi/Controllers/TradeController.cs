@@ -25,8 +25,8 @@ namespace BankTrader.WebApi.Controllers
         }
 
         [HttpPost]
-        [Route("identity-categories")]
-        public IActionResult Post([FromBody] List<TradeViewModel> portfolio)
+        [Route("identity")]
+        public IActionResult Post(List<TradeViewModel> portfolio)
         {
             List<string> tradeCategories = new List<string>();
 
