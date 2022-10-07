@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankTrader.Infra.CrossCutting.Identity.Migrations
 {
     [DbContext(typeof(BankTraderAppDbContext))]
-    [Migration("20221007164153_Initial")]
+    [Migration("20221007200953_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

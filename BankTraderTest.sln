@@ -14,27 +14,29 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-SQL", "5-SQL", "{E415C783-6257-46CD-A52F-BCB0C5B1C0C2}"
 	ProjectSection(SolutionItems) = preProject
 		BankTrader_IdentityCategories.sql = BankTrader_IdentityCategories.sql
+		SQL Identity.sql = SQL Identity.sql
+		SQL Project.sql = SQL Project.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{8490D6EF-8349-41D5-8AA6-24E0D82CEBD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-CrossCutting", "4.2-CrossCutting", "{944EF926-06E2-4531-B9BA-BFC7006D0234}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.WebApi", "BankTrader.WebApi\BankTrader.WebApi.csproj", "{94C169C9-EDA4-48CF-80CA-FC61F7732D18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.WebApi", "BankTrader.WebApi\BankTrader.WebApi.csproj", "{94C169C9-EDA4-48CF-80CA-FC61F7732D18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Infra.CrossCutting.IoC", "BankTrader.Infra.CrossCutting.IoC\BankTrader.Infra.CrossCutting.IoC.csproj", "{240178CD-1A1D-467D-85C9-0859A10AC971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Infra.CrossCutting.IoC", "BankTrader.Infra.CrossCutting.IoC\BankTrader.Infra.CrossCutting.IoC.csproj", "{240178CD-1A1D-467D-85C9-0859A10AC971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Infra.Data", "BankTrader.Infra.Data\BankTrader.Infra.Data.csproj", "{7C9E1CF0-A283-4F3B-846B-9119D8A0F1C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Infra.Data", "BankTrader.Infra.Data\BankTrader.Infra.Data.csproj", "{7C9E1CF0-A283-4F3B-846B-9119D8A0F1C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Domain.Core", "BankTrader.Domain.Core\BankTrader.Domain.Core.csproj", "{71AE5073-F915-4F9E-838A-54D59B651D7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Domain.Core", "BankTrader.Domain.Core\BankTrader.Domain.Core.csproj", "{71AE5073-F915-4F9E-838A-54D59B651D7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Domain", "BankTrader.Domain\BankTrader.Domain.csproj", "{F5B9E38C-3BDE-4384-98FB-D99929A8F5A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Domain", "BankTrader.Domain\BankTrader.Domain.csproj", "{F5B9E38C-3BDE-4384-98FB-D99929A8F5A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Infra.CrossCutting.Bus", "BankTrader.Infra.CrossCutting.Bus\BankTrader.Infra.CrossCutting.Bus.csproj", "{39C33C4C-01D3-4649-A19D-084C034A1209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Infra.CrossCutting.Bus", "BankTrader.Infra.CrossCutting.Bus\BankTrader.Infra.CrossCutting.Bus.csproj", "{39C33C4C-01D3-4649-A19D-084C034A1209}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Infra.CrossCutting.Identity", "BankTrader.Infra.CrossCutting.Identity\BankTrader.Infra.CrossCutting.Identity.csproj", "{15EE24FB-2E3B-4AE6-8324-300C4E40BDE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Infra.CrossCutting.Identity", "BankTrader.Infra.CrossCutting.Identity\BankTrader.Infra.CrossCutting.Identity.csproj", "{15EE24FB-2E3B-4AE6-8324-300C4E40BDE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTrader.Application", "BankTrader.Application\BankTrader.Application.csproj", "{6664B3D4-D58F-4656-B75C-364BAC9BD515}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTrader.Application", "BankTrader.Application\BankTrader.Application.csproj", "{6664B3D4-D58F-4656-B75C-364BAC9BD515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
