@@ -10,8 +10,7 @@ namespace BankTrader.WebApi.Controllers
     public class TradeController : ApiController
     {
         private readonly ITradeAppService _TradeAppService;
-        public SelfResponse Response { get; set; }
-
+        
         public TradeController(ITradeAppService TradeAppService)
         {
             _TradeAppService = TradeAppService;
@@ -29,11 +28,8 @@ namespace BankTrader.WebApi.Controllers
         {
             List<string> tradeCategories = new List<string>();
 
-            if (!ModelState.IsValid ? CustomResponse(ModelState))
-            {
-                AddError("Model is invalid");                
-                return CustomResponse();
-            }
+            if (!ModelState.IsValid)
+                CustomResponse(ModelState);
 
             foreach (var item in portfolio)
             {
