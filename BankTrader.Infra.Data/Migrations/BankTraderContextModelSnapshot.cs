@@ -31,16 +31,11 @@ namespace BankTrader.Infra.Data.Migrations
 
                     b.Property<string>("ClientSector")
                         .IsRequired()
-                        .ValueGeneratedOnAdd()
                         .HasMaxLength(150)
-                        .HasColumnType("varchar(150)")
-                        .HasDefaultValue("");
+                        .HasColumnType("varchar(150)");
 
-                    b.Property<double?>("Value")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("double")
-                        .HasDefaultValue(0.0);
+                    b.Property<decimal>("Value")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

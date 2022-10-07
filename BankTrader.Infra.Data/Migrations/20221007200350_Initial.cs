@@ -14,8 +14,8 @@ namespace BankTrader.Infra.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Value = table.Column<double>(type: "double", nullable: false, defaultValue: 0.0),
-                    ClientSector = table.Column<string>(type: "varchar(150)", maxLength: 150, nullable: false, defaultValue: "")
+                    Value = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ClientSector = table.Column<string>(type: "varchar(150)", maxLength: 150, nullable: false)
                 },
                 constraints: table =>
                 {

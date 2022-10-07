@@ -12,14 +12,12 @@ namespace BankTrader.Infra.Data.Mappings
                 .HasColumnName("Id");
 
             builder.Property(c => c.Value)
-                .HasColumnType("double")
-                .HasDefaultValue(0.0)
+                .HasColumnType("decimal(18,2)")
                 .IsRequired();
 
             builder.Property(c => c.ClientSector)
                 .HasColumnType("varchar(150)")
                 .HasMaxLength(150)
-                .HasDefaultValue("")
                 .IsRequired();
         }
     }

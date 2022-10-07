@@ -11,6 +11,12 @@ namespace BankTrader.Infra.Data.Repository
         protected readonly BankTraderContext Db;
         protected readonly DbSet<Trade> DbSet;
 
+        public TradeRepository(BankTraderContext context)
+        {
+            Db = context;
+            DbSet = Db.Set<Trade>();
+        }
+
         public IUnitOfWork UnitOfWork => Db;
 
         public async Task<Trade> GetById(Guid id)
