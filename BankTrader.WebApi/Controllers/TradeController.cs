@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankTrader.WebApi.Controllers
 {
     [Authorize]
+    [Route("[controller]")]
     public class TradeController : ApiController
     {
         private readonly ITradeAppService _TradeAppService;
@@ -17,13 +18,14 @@ namespace BankTrader.WebApi.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("trade")]
+        [HttpGet]
         public async Task<IActionResult> Get()
         {
             return CustomResponse(await _TradeAppService.GetAll());
         }
 
-        [HttpPost("trade/identity-categories")]
+        [HttpPost]
+        [Route("identity-categories")]
         public IActionResult Post([FromBody] List<TradeViewModel> portfolio)
         {
             List<string> tradeCategories = new List<string>();
@@ -59,14 +61,15 @@ namespace BankTrader.WebApi.Controllers
 
 
         [AllowAnonymous]
-        [HttpGet("trade/{id:guid}")]
+        [HttpGet]
+        [Route("trade/{id:guid}")]
         public async Task<TradeViewModel> Get(Guid id)
         {
             return await _TradeAppService.GetById(id);
         }
 
         [CustomAuthorize("Trade", "Write")]
-        [HttpPost("trade")]
+        [HttpPost("trade/new")]
         public async Task<IActionResult> Post([FromBody] TradeViewModel TradeViewModel)
         {
             return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _TradeAppService.RegisterORUpdate(TradeViewModel));
